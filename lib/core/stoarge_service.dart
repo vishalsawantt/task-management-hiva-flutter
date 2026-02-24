@@ -11,7 +11,7 @@ class SessionService {
     await prefs.setString("token", token);
     await prefs.setBool("isLoggedIn", true);
 
-    /// 🔹 Console logs
+    //Console logs
     debugPrint("===== SESSION SAVED =====");
     debugPrint("Username: $username");
     debugPrint("Token: $token");

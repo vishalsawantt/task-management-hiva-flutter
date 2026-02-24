@@ -35,7 +35,7 @@ class TaskListPage extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         }
 
-        /// Empty state
+        //Empty state
         if (c.tasks.isEmpty) {
           return Center(
             child: Column(
@@ -106,7 +106,7 @@ class TaskListPage extends StatelessWidget {
     );
   }
 
-  /// Create Task Dialog with validation
+  //Dialog
   void _showCreateDialog() {
     final title = TextEditingController();
     final desc = TextEditingController();
@@ -145,10 +145,10 @@ class TaskListPage extends StatelessWidget {
         ),
 
         actions: [
-          /// Cancel button
+          //Cancel button
           TextButton(onPressed: () => Get.back(), child: const Text("Cancel")),
 
-          /// Create button
+          //Create button
           ElevatedButton(
             onPressed: () {
               String t = title.text.trim();

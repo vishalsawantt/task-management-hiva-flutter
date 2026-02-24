@@ -58,7 +58,7 @@ class RegisterPage extends StatelessWidget {
 
                 const SizedBox(height: 20),
 
-                /// 🔹 Loading Button
+                //Loading Button
                 Obx(() => SizedBox(
                       height: 48,
                       child: ElevatedButton(
